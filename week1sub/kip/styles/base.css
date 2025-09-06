@@ -6,8 +6,8 @@ deep slate blue #3D405B
 /********************** SITE WIDE ***********************/
 
 * {
-    font-family: josefin sans, sans-serif
-    box-;
+    font-family: "josefin sans", sans-serif;
+    box-sizing: border-box;
 }
 
 /********************** HEADER ***********************/
@@ -24,10 +24,10 @@ header img {
     display: block;
     width: 100%;
     height: auto;
-    padding-bottom: 5px;
+    padding-bottom: 5px; /**/
 }
 
-hearder span {
+header span {
     font-size: 1.2rem;
     color: #3D405B;
 }
@@ -39,11 +39,11 @@ hearder span {
     font-size: 2;
     color: #3D405B;
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
 .hamburger::before {
-    content: "\2630";
+    content: "\2630"; /**/
     font: 2rem; 
 }
 
@@ -53,7 +53,7 @@ hearder span {
 
 /********************** NAVIGATION ***********************/
 .navigation {
-    display: none;
+    display: none
 
 }
 
@@ -84,5 +84,38 @@ hearder span {
 }
 
 h1 {
-    margin-left: 10px;
+    margin: 1rem 10px;
+    color: #3D405B
+}
+
+/********************** FOOTER ***********************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
 }

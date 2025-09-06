@@ -6,9 +6,9 @@
     <title>steps - Oni Samson Promise</title>
     <meta name="description" content="A webpage information about steps.">
     <meta name="author" content="Oni Samson Promise">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
     <script src="scripts/navigation.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 <body>
     <header>
         <img src="images/home.svg" alt="site logo" width="512" height="512" id="logo">
-        <span> Samson Site Title</span>
+        <span>Samson Site Title</span>
         <button id="ham-btn" class="hamburger" ></button>
     </header>
 
@@ -33,8 +33,14 @@
         <h1>Dedicate Temples</h1>
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> &#10070; Oni Samson Promise &#10070; Nigeria</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <div class="social">
+            <a href="https://github.com/your-profile" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/your-profile" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.facebook.com/your-profile" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://twitter.com/your-profile" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+        </div>
+        <p>copyright symbol and current year</p>
+        <p>Last Modified</p>
     </footer>
 </body>
 </html>
