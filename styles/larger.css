@@ -4,8 +4,74 @@
         margin: 0 auto
     }
 
+    ul {
+        background-color: black;
+    }
+
+    a {
+        color: white;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
     section {
         margin-bottom: 10px;
+    }
+
+    .home div img {
+        padding-left: 70px;
+        margin-bottom: 12px;
+        width: 80%;
+        height: auto;
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 15px;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .subjects {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    .home div, .courses div, .subjects div {
+        background-color: grey
+    }
+
+    h2 {
+        text-align: center;
+        background-color:black;
+        color: white;
+        margin-top: 0px;
+        border-radius: 3px;
+    }
+
+    h3 {
+        text-align: center;
+        border-radius: 3px;
+    }
+
+    div {
+        border-radius: 5px;
+    }
+
+    section p {
+        text-align: center;
     }
 
     header {
