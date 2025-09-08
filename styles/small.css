@@ -36,7 +36,7 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    font-size: 2px;
+    font-size: 2rm;
     color: #3D405B;
     cursor: pointer;
     font-family: Verdana, Tahoma, sans-serif;
