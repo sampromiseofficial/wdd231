@@ -134,12 +134,17 @@ section p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+    cursor: pointer;
+}
+
+.courses :hover {
+    background-color: #ddd;
 }
 
 .subjects {
     display: block;
     grid-template-columns: repeat(3, 1fr);
-    gap: 7px;
+    gap: 7px; 
 }
 
 .subjects div {

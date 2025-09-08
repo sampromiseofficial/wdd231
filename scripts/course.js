@@ -77,3 +77,35 @@ const courses = [
         completed: false
     }
 ]
+
+
+//store the selected elements that we are going to use.
+const allBtn = document.querySelector("#all");
+const cseBtn = document.querySelector("#cse");
+const wddBtn = document.querySelector("#wdd");
+
+function displayCourses(filteredCourses) {
+    const subjectsSection = document.querySelector(".subjects");
+    subjectsSection.innerHTML = ""; // clear old content
+
+    filteredCourses.forEach(course => {
+        const div = document.createElement("div");
+        div.innerHTML = `<p>${course.subject} ${course.number} - ${course.title} (${course.credits} credits)</p>`;
+        if (course.completed) {
+            div.style.backgroundColor = "#3D405B"; // completed styling
+            div.style.color = "white";
+        }
+        subjectsSection.appendChild(div);
+    });
+
+    // show total credits dynamically
+    const totalCredits = filteredCourses.reduce((sum, c) => sum + c.credits, 0);
+    document.querySelector("#credit-total").textContent = totalCredits;
+}
+
+// Default: show all
+displayCourses(courses);
+
+allBtn.addEventListener("click", () => displayCourses(courses));
+cseBtn.addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
+wddBtn.addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));

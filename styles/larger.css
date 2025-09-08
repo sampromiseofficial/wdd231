@@ -37,6 +37,11 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 15px;
+        cursor: pointer;
+    }
+    
+    .courses :hover {
+        background-color: #ddd;
     }
     
     .subjects {
