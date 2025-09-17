@@ -110,31 +110,30 @@ header span {
   padding: 5px;
   border-radius: 5px;
 }
-
 .event {
-    background-color: grey;
-    border-radius: 5px;
-    padding: 4px;
-    height: 250px;
-    
+  background-color: grey;
+  border-radius: 5px;
+  padding: 4px;
+  height: 250px;
 }
+
 .current-weather {
-    background-color: grey;
-    border-radius: 5px;
-    padding: 4px;
-    margin-bottom: 20px;
-    margin-top: 50px
+  background-color: grey;
+  border-radius: 5px;
+  padding: 4px;
+  margin-bottom: 20px;
+  margin-top: 50px
 }
 
 .weather-forcast {
-    background-color: grey;
-    border-radius: 5px;
-    padding: 4px;
+  background-color: grey;
+  border-radius: 5px;
+  padding: 4px;
 }
 
 h2 {
-    margin-top: 0px;
-    margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 25px;
 }
 
 /* ------------------- MEMBERS ------------------- */
@@ -172,8 +171,8 @@ footer {
 }
 
 .socoal a:hover {
-    color: #E07A5F;
-    font-size: 50px;
+  color: #E07A5F;
+  font-size: 50px;
 }
 
 
