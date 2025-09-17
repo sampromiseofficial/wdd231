@@ -1,0 +1,93 @@
+@media only screen and (min-width: 38em) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 20px;
+        padding: 10px 20px;
+    }
+
+    main img {
+        max-height: 350px;
+    }
+    
+    #logo {
+        width: 40px;
+        height: auto;
+    }
+    
+    header span {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #3D405B;
+        margin-left: 10px;
+    }
+    header img {
+        max-width: 20px;
+        max-height: 25px;
+    }
+    
+    .hamburger {
+        display: none; /* hide hamburger on desktop */
+    }
+    
+    .navigation {
+        display: flex !important;
+        margin-left: auto; /* push nav links to the right */
+        justify-content: flex-end;
+    }
+    
+    .navigation ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .navigation a:hover {
+        color: #E07A5F;
+    }
+    
+    #mode-toggle {
+        margin-left: 20px; /* keep dark mode icon to the far right */
+        width: 30px;
+        height: 30px;
+    }
+    
+    .home1 {
+        display: grid;
+        grid-template-columns: 3fr 2fr 2fr;
+        gap: 10px;
+        margin-bottom: 0px;
+    }
+
+    .menu {
+        margin-top: 0px;
+
+    }
+
+    #members.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    
+    #members.list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .foot {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}

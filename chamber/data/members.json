@@ -1,0 +1,71 @@
+[
+    {
+        "name": "Psalmtech",
+        "address": "33 Onibeju Street, Agege, Lagos",
+        "phone": "+2348105573673",
+        "website": "https://psalmtech.com",
+        "image": "psalmtech.webp",
+        "membershipLevel": 3,
+        "description": "Technology solutions in software, hardware, and forex."
+    },
+  
+    {
+        "name": "AllSportsFans",
+        "address": "12 Stadium Road, Surulere, Lagos",
+        "phone": "+2348081122334",
+        "website": "https://allsportsfans.com",
+        "image": "allsportfans.webp",
+        "membershipLevel": 2,
+        "description": "E-commerce platform for sports memorabilia and gear."
+    },
+  
+    {
+        "name": "GreenFoods Ltd",
+        "address": "45 Market Avenue, Ikeja, Lagos",
+        "phone": "+2347012233445",
+        "website": "https://greenfoods.com",
+        "image": "greenfoods.webp",
+        "membershipLevel": 1,
+        "description": "Organic foods supplier promoting healthy living."
+    },
+  
+    {
+        "name": "Swift Logistics",
+        "address": "78 Airport Road, Abuja",
+        "phone": "+2348034455667",
+        "website": "https://swiftlogistics.com",
+        "image": "swiftlogistics.webp",
+        "membershipLevel": 2,
+        "description": "Fast and reliable delivery services nationwide."
+    },
+  
+    {
+        "name": "BrightFuture Academy",
+        "address": "10 Unity Street, Ibadan",
+        "phone": "+2349056677889",
+        "website": "https://brightfutureacademy.edu",
+        "image": "brightfutureacademy.webp",
+        "membershipLevel": 1,
+        "description": "Educational institution focused on STEM excellence."
+    },
+    
+    {
+        "name": "HealthFirst Clinic",
+        "address": "20 Main Street, Port Harcourt",
+        "phone": "+2348112233445",
+        "website": "https://healthfirstclinic.org",
+        "image": "healthfirst.webp",
+        "membershipLevel": 3,
+        "description": "Private clinic offering modern healthcare services."
+    },
+    
+    {
+        "name": "BlueSky Travels",
+        "address": "14 Marina Road, Victoria Island, Lagos",
+        "phone": "+2348145566778",
+        "website": "https://blueskytravels.com",
+        "image": "bluesky.png",
+        "membershipLevel": 2,
+        "description": "Tourism and travel agency with global packages."
+    }
+]
