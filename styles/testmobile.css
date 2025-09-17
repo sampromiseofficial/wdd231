@@ -26,10 +26,6 @@ header img {
     max-height: 45px;
 }
 
-.hide {
-  display: none;
-}
-
 #logo {
   width: 40px;
   height: auto;
@@ -83,6 +79,10 @@ header span {
 
 .navigation a:hover {
   color: #E07A5F;
+}
+
+.hide {
+  display: none;
 }
 
 /* ------------------- HERO IMAGE ------------------- */
