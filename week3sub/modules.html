@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Modules</title>
+  <link rel="stylesheet" href="modules.css">
+  <script type="module" src="scripts/modules.js"></script>
+  <script type="module" src="scripts/course.mjs"></script>
+  <script type="module" src="scripts/sections.mjs"></script>
+  <script type="module" src="scripts/output.mjs"></script>
+</head>
+<body>
+  <h1 id="courseTitle"></h1>
+
+  <label for="sectionNumber">Select a section:</label>
+  <select id="sectionNumber"></select>
+
+  <button id="enrollStudent">Enroll Student</button>
+  <button id="dropStudent">Drop Student</button>
+
+  <div id="sections"></div>
+
+  <!-- Use type="module" -->
+  <script type="module" src="modules.js"></script>
+</body>
+</html>

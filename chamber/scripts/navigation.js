@@ -78,7 +78,7 @@ const lon = -3.0026; // Timbuktu longitude
 
 async function getWeather() {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=6.62&lon=3.27&units=imperial&appid=a13de643306230623be7e9e2402dc57c`;
     const response = await fetch(url);
     const data = await response.json();
 
