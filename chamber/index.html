@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>directory - Oni Samson Promise</title>
+    <meta name="description" content="A webpage information about directory.">
+    <meta name="author" content="Oni Samson Promise">
+    <meta property="og:title" content="directory." />
+    <meta property="og:description" content="A webpage information about directory." />
+    <meta property="og:image" content="https://example.com/images/preview.jpg" />
+    <meta property="og:url" content="https://https://sampromiseofficial.github.io/wdd231/chamber/directory.html" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <link rel="alternate" type="application/json" href="data/members.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-of-commerce-fav-logo-new.webp" alt="site logo" id="logo">
+        <span>Samson Chamber of Commerce</span>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="current"><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+        <img src="images/circle-half.svg" alt="dark mode toggle" id="mode-toggle">
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
+    </header>
+    
+    <main>
+        <img src="images/chamber-of-commerce-building-new.webp" alt="hero image" id="hero-img">
+        
+        <h1>Home</h1>
+        <section class="home1">
+            <div class="event">
+                <h2>Event</h2>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <div class="logo-condition">
+                    
+                    <div class="logo">
+                        <img src="images/cloud-sun-fill (1).svg" alt="logo" width="10" height="10" id="logo">
+                    </div>
+                    <div class="condition">
+                        <p id="temp">--°</p>
+                        <p id="desc">Partly Cloudy</p>
+                        <p id="high">High: --</p>
+                        <p id="low">Low: --</p>
+                        <p id="humidity">Humidity: --</p>
+                        <p id="sunrise">Sunrise: --</p>
+                        <p id="sunset">Sunset: --</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-forcast">
+                <h2>Weather Forecast</h2>
+                <p id="today">Today: --</p>
+                <p id="wednesday">Wednesday: --</p>
+                <p id="thursday">Thursday: --</p>
+            </div>
+        </section>
+
+        <div class="menu">
+            <button id="list">List</button>
+            <button id="grid">Grid</button>
+        </div>
+        <section id="members"></section>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="address">
+                <h3>Samson Chamber of Commerce</h3>
+                <p> Ikeja</p>
+                <p>Lagos, Nigeria</p>
+                <a href="mailto:sampromiseofficial@gmail.com">sampromiseofficial</a>
+                <p>(234) 810557 3673</p>
+            </div>
+            <div class="social">
+                <a href="http://www.youtube.com/channel/UCs6_XhyRiWfpffFfzHfmHxA" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="http://linkedin.com/in/samson-oni-9611a8266" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+                <a href="http://facebook.com/psalmproxy1010?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+                <a href="http://twitter.com/psalmproxy" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+            </div>
+            <div class="address">
+                <h3>WDD231 Class Project</h3>
+                <h3>Oni Samson Promise</h3>
+                <p>&copy; <span id="current-year"></span> Samson Chamber of commerce</p>
+                <p>Last Modification: <span id="last-modified"></span></p>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
