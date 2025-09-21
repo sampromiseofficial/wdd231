@@ -3,7 +3,7 @@ const myDescription = document.querySelector("#description");
 const myTemperature = document.querySelector("#temperature");
 const myGraphic = document.querySelector("#graphic");
 
-const myKey = "8ae697c6d7a978c9d07b51f03fcfb75e";
+const myKey = "";
 const myLat = "42.91";
 const myLong = "-76.80";
 
