@@ -71,31 +71,6 @@ listbutton.addEventListener("click", () => {
   display.classList.remove("grid");
 });
 
-// ------------------ WEATHER ------------------
-const apiKey = "8ae697c6d7a978c9d07b51f03fcfb75e";
-const lat = 6.62; // 
-const lon = 3.27; // 
-
-async function getWeather() {
-  try {
-    const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
-    const response = await fetch(url);
-    const data = await response.json();
-
-    document.getElementById("temp").textContent = `${Math.round(data.main.temp)} °F`;
-    document.getElementById("desc").textContent = data.weather[0].description;
-    document.getElementById("high").textContent = `High: ${Math.round(data.main.temp_max)}°F`;
-    document.getElementById("low").textContent = `Low: ${Math.round(data.main.temp_min)}°F`;
-    document.getElementById("humidity").textContent = `Humidity: ${data.main.humidity}%`;
-    document.getElementById("sunrise").textContent = `Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}`;
-    document.getElementById("sunset").textContent = `Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}`;
-  } catch (error) {
-    console.error("Error fetching weather:", error);
-  }
-}
-
-getWeather();
-
 
 
 
