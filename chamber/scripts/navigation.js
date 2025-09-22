@@ -72,13 +72,13 @@ listbutton.addEventListener("click", () => {
 });
 
 // ------------------ WEATHER ------------------
-const apiKey = "YOUR_OPENWEATHERMAP_API_KEY";
-const lat = 16.7666; // Timbuktu latitude
-const lon = -3.0026; // Timbuktu longitude
+const apiKey = "8ae697c6d7a978c9d07b51f03fcfb75e";
+const lat = 6.62; // 
+const lon = 3.27; // 
 
 async function getWeather() {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/weather?lat=6.62&lon=3.27&units=imperial&appid=a13de643306230623be7e9e2402dc57c`;
+    const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`;
     const response = await fetch(url);
     const data = await response.json();
 
@@ -95,3 +95,11 @@ async function getWeather() {
 }
 
 getWeather();
+
+
+
+
+
+
+
+

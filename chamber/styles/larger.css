@@ -126,4 +126,26 @@
         color: #E07A5F;
         font-size: 50px;
     }
+    .spotlights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .hero button {
+          background-color:black;
+          color: white;
+          text-align: center;
+          position:absolute;
+          top: 350px; /* Add this line to push it below the h1 */
+          padding: 10px 30px;
+          border: none;
+          border-radius: 50px;
+          cursor: pointer;
+          font-size: small;
+          font-weight: bold;
+          left: 46%;          
+    }
+
 }
