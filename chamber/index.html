@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>directory - Oni Samson Promise</title>
+    <title>home - Oni Samson Promise</title>
     <meta name="description" content="A webpage information about directory.">
     <meta name="author" content="Oni Samson Promise">
     <meta property="og:title" content="directory." />
@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
-    <link rel="alternate" type="application/json" href="data/members.json">
+    <script src="scripts/homenav.js" defer></script>
+    <link rel="alternate" type="application/json" href="data/homemembers.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -40,8 +40,13 @@
     </header>
     
     <main>
-        <img src="images/chamber-of-commerce-building-new.webp" alt="hero image" id="hero-img">
-        
+        <div class="hero">
+            <img src="images/chamber-of-commerce-building-new.webp" alt="hero image" id="hero-img">
+            <a href="">
+                <button>Call to Action</button>
+            </a>
+        </div>
+
         <h1>Home</h1>
         <section class="home1">
             <div class="event">
@@ -73,10 +78,8 @@
                 <p id="thursday">Thursday: --</p>
             </div>
         </section>
-
-        <div class="spotlight">
-            <section id="advert"></section>
-        </div>
+        
+        <section id="advert" class="spotlights"> </section>
 
     </main>
     <footer>
