@@ -7,3 +7,19 @@ document.querySelector("#results").innerHTML = `
   <p>Your phone: ${myInfo.get("phone")}</p>
   <p>Your email: ${myInfo.get("email")}</p>
 `;
+
+// Save in local storage
+localStorage.setItem("appointment", JSON.stringify({
+  first: myInfo.get("first"),
+  last: myInfo.get("last"),
+  ordinance: myInfo.get("ordinance"),
+  date: myInfo.get("date"),
+  location: myInfo.get("location"),
+  phone: myInfo.get("phone"),
+  email: myInfo.get("email")
+}));
+
+// Retrieve from local storage
+const stored = JSON.parse(localStorage.getItem("appointment"));
+console.log(stored);
+
