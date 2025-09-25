@@ -78,12 +78,12 @@ const courses = [
     }
 ]
 
-
 //store the selected elements that we are going to use.
 const allBtn = document.querySelector("#all");
 const cseBtn = document.querySelector("#cse");
 const wddBtn = document.querySelector("#wdd");
 
+// This code is repeated below the dialog ......................................
 function displayCourses(filteredCourses) {
     const subjectsSection = document.querySelector(".subjects");
     subjectsSection.innerHTML = ""; // clear old content
@@ -97,6 +97,7 @@ function displayCourses(filteredCourses) {
         }
         subjectsSection.appendChild(div);
     });
+//....................................................................................................
 
     // show total credits dynamically
     const totalCredits = filteredCourses.reduce((sum, c) => sum + c.credits, 0);
@@ -109,3 +110,53 @@ displayCourses(courses);
 allBtn.addEventListener("click", () => displayCourses(courses));
 cseBtn.addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "CSE")));
 wddBtn.addEventListener("click", () => displayCourses(courses.filter(c => c.subject === "WDD")));
+
+//Dialog Section....................................................//
+
+const courseDetails = document.querySelector("#course-details");
+
+//Repeated code .......................................................................
+function displayCourses(filteredCourses) {
+    const subjectsSection = document.querySelector(".subjects");
+    subjectsSection.innerHTML = ""; // clear old content
+
+    filteredCourses.forEach(course => {
+        const div = document.createElement("div");
+        div.innerHTML = `<p>${course.subject} ${course.number} - ${course.title} (${course.credits} credits)</p>`;
+        
+        if (course.completed) {
+            div.style.backgroundColor = "#3D405B"; 
+            div.style.color = "white";
+        }
+
+        // attach event listener to open details dialog
+        div.addEventListener("click", () => displayCourseDetails(course));
+
+        subjectsSection.appendChild(div);
+    });
+    //............................................................................................................
+
+    // update total credits
+    const totalCredits = filteredCourses.reduce((sum, c) => sum + c.credits, 0);
+    document.querySelector("#credit-total").textContent = totalCredits;
+}
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+
+    courseDetails.showModal();
+
+    // re-select the close button after inserting HTML
+    const closeModal = courseDetails.querySelector("#closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
