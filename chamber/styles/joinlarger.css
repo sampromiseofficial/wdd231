@@ -147,5 +147,40 @@
           font-weight: bold;
           left: 46%;          
     }
+    
+    .confirmation {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background: #f9f9f9;
+        border-radius: 12px;
+        text-align: center;
+    }
+    
+    .confirmation h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .confirmation p {
+        margin: 0.5rem 0;
+    }
 
+    /* Form */
+    
+    .form-container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    form {
+        padding: 2rem;
+    }
+    
+    .membership-cards {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
 }
+
