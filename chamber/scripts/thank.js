@@ -33,7 +33,6 @@ document.querySelector("#results").innerHTML = `
 <p>Phone: <strong>${myInfo.get("phone")}</strong></p>
 <p>Organization: <strong>${myInfo.get("organization")}</strong></p>
 <p>Membership Level: <strong>${myInfo.get("membership")}</strong></p>
-<p>Submitted At: <strong>${myInfo.get("timestamp")}</strong></p>
 `;
 
 // Save in local storage
@@ -44,7 +43,6 @@ localStorage.setItem("chamberApplication", JSON.stringify({
     phone: myInfo.get("phone"),
     organization: myInfo.get("organization"),
     membership: myInfo.get("membership"),
-    timestamp: myInfo.get("timestamp")
   }));
 
 // Retrieve from local storage

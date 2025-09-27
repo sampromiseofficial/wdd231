@@ -25,7 +25,7 @@ window.addEventListener("resize", () => {
 // ========== Timestamp Setup ==========
 const timestampField = document.getElementById("timestamp");
 if (timestampField) {
-  timestampField.value = new Date().toISOString();
+  timestampField.value = new Date().toLocaleString();
 }
 
 // ========== Modal Logic ==========
