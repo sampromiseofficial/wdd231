@@ -39,86 +39,91 @@
         </header>
 
         <main>
-          <h3>Join Our Chamber</h3>
+          <h1>Join Our Chamber</h1>
           <div class="form-container">
             <form method="get" action="thank.html">
-            <label>
-              First Name:
-              <input type="text" name="firstName" required autocomplete="given-name">
-            </label>
-            
-            <label>
-              Last Name:
-              <input type="text" name="lastName" required autocomplete="family-name">
-            </label>
-            
-            <label>
-              Email:
-              <input type="email" name="email" required autocomplete="email">
-            </label>
-            
-            <label>
-              Mobile Phone:
-              <input type="tel" name="phone" required autocomplete="tel">
-            </label>
-            
-            <label>
-              Organization Name:
-              <input type="text" name="organization" required autocomplete="organization">
-            </label>
-            
-            <label>
-              Membership Level:
-              <select name="membership" required>
-                <option value="np">NP Membership (Non-Profit)</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-              </select>
-            </label>
-            
-            <label>
-              Organization Description (Optional):
-              <textarea name="description"></textarea>
-            </label>
-            
-            <!-- Hidden timestamp -->
-             <input type="hidden" name="timestamp" id="timestamp">
-             <button type="submit">Submit Application</button>
-          </form>
-
-          <form>
-            <!-- Membership Cards -->
-            <div class="membership-cards">
-              <div class="card">
-                <h3>NP Membership</h3>
-                <p>No fee for nonprofit organizations.</p>
-                <a href="#" data-modal="np">More Info</a>
-              </div>
+              <label>
+                First Name:
+                <input type="text" name="firstName" required autocomplete="given-name">
+              </label>
               
-              <div class="card">
-                <h3>Bronze Membership</h3>
-                <p>Basic level membership benefits.</p>
-                <a href="#" data-modal="bronze">More Info</a>
-              </div>
+              <label>
+                Last Name:
+                <input type="text" name="lastName" required autocomplete="family-name">
+              </label>
               
-              <div class="card">
-                <h3>Silver Membership</h3>
-                <p>Expanded benefits and visibility.</p>
-                <a href="#" data-modal="silver">More Info</a>
-              </div>
+              <label>
+                Organizational Title:
+                <input type="text" name="title" required autocomplete="title">
+              </label>
               
-              <div class="card">
-                <h3>Gold Membership</h3>
-                <p>Maximum benefits and spotlight access.</p>
-                <a href="#" data-modal="gold">More Info</a>
+              <label>
+                Email:
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+              
+              <label>
+                Mobile Phone:
+                <input type="tel" name="phone" required autocomplete="tel">
+              </label>
+              
+              <label>
+                Organization Name:
+                <input type="text" name="organization" required autocomplete="organization">
+              </label>
+              
+              <label>
+                Membership Level:
+                <select name="membership" required>
+                  <option value="np">NP Membership (Non-Profit)</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+                </select>
+              </label>
+              
+              <label>
+                Organization Description (Optional):
+                <textarea name="description"></textarea>
+              </label>
+              
+              <!-- Hidden timestamp -->
+               <input type="hidden" name="timestamp" id="timestamp">
+               <button type="submit">Submit Application</button>
+            </form>
+            
+            <div class="membership">
+              <!-- Membership Cards -->
+               <div class="membership-cards">
+                <div class="card">
+                  <h3>NP Membership</h3>
+                  <p>No fee for nonprofit organizations.</p>
+                  <a href="#" data-modal="np">More Info</a>
+                </div>
+                
+                <div class="card">
+                  <h3>Bronze Membership</h3>
+                  <p>Basic level membership benefits.</p>
+                  <a href="#" data-modal="bronze">More Info</a>
+                </div>
+                
+                <div class="card">
+                  <h3>Silver Membership</h3>
+                  <p>Expanded benefits and visibility.</p>
+                  <a href="#" data-modal="silver">More Info</a>
+                </div>
+                
+                <div class="card">
+                  <h3>Gold Membership</h3>
+                  <p>Maximum benefits and spotlight access.</p>
+                  <a href="#" data-modal="gold">More Info</a>
+                </div>
+              
               </div>
             </div>
-          </form>
+          </div>
 
         </div>
-
-          
           <!-- Modals -->
           <div id="np" class="modal">
             <div class="modal-content">

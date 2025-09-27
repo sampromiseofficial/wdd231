@@ -31,6 +31,7 @@ document.querySelector("#results").innerHTML = `
 <p>Thank you, <strong>${myInfo.get("firstName")} ${myInfo.get("lastName")}</strong></p>
 <p>Email: <strong>${myInfo.get("email")}</strong></p>
 <p>Phone: <strong>${myInfo.get("phone")}</strong></p>
+<p>Organization Title: <strong>${myInfo.get("title")}</strong></p>
 <p>Organization: <strong>${myInfo.get("organization")}</strong></p>
 <p>Membership Level: <strong>${myInfo.get("membership")}</strong></p>
 `;
@@ -39,6 +40,7 @@ document.querySelector("#results").innerHTML = `
 localStorage.setItem("chamberApplication", JSON.stringify({
     firstName: myInfo.get("firstName"),
     lastName: myInfo.get("lastName"),
+    title: myInfo.get("title"),
     email: myInfo.get("email"),
     phone: myInfo.get("phone"),
     organization: myInfo.get("organization"),

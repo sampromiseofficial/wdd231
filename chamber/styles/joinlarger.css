@@ -10,6 +10,10 @@
     main img {
         max-height: 350px;
     }
+
+    h1 {
+        text-align: center;
+    }
     
     #logo {
         width: 40px;
@@ -225,6 +229,10 @@
         border: 1px solid #ddd;
         border-radius: 6px;
         background: #fafafa;
+    }
+
+    .membership {
+        margin-top: 5rem;
     }
 
 }
