@@ -1,0 +1,54 @@
+/* =======================
+   DESKTOP VIEW (769px+)
+======================= */
+@media only screen and (min-width: 769px) {
+  header {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none; /* hide hamburger on desktop */
+  }
+
+  nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    background: none;
+    padding: 0;
+  }
+
+  nav a {
+    padding: 0;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .business-card {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+    margin: 1rem 2%;
+  }
+  
+  .foot {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
+    .social a {
+        margin-top: 35px;
+    }
+    
+    .socoal a:hover {
+        color: #E07A5F;
+        font-size: 50px;
+    }
+}
