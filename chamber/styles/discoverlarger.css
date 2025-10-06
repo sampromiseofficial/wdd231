@@ -1,4 +1,4 @@
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 64rem) {
     header {
         display: flex;
         align-items: center;
@@ -54,9 +54,21 @@
     .navigation a:hover {
         color: #E07A5F;
     }
+
+    h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+    /* *------------------- DISCOVER ------------------- */
     
-    
-    
+    #discover-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ------------------- FOOTER ------------------- */
     .foot {
         flex-direction: row;
         justify-content: space-between;

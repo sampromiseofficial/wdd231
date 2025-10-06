@@ -1,4 +1,4 @@
-[
+export const discoverItems = [
     {
         "id": "item1",
         "title": "Riverside Park",

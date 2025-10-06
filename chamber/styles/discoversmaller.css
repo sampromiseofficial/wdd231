@@ -85,6 +85,56 @@ header span {
   color: #E07A5F;
 }
 
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* ------------------- discover ------------------- */
+#discover-items div {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 8px;
+  overflow: hidden;
+  background-color: #eee;
+
+  display: grid;
+  grid-template-areas:
+    "title"
+    "address"
+    "Image"
+    "description"
+}
+
+#discover-items div h3 {
+  grid-area: title;
+  margin: 1rem 10px;
+  color: #3D405B;
+}
+
+#discover-items div img {
+  grid-area: Image;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+}
+
+#discover-items div address {
+  grid-area: address;
+  margin: 1rem 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#discover-items div p {
+  grid-area: description;
+  margin: 1rem 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
 
 /* ------------------- FOOTER ------------------- */
 footer {

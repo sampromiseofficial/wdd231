@@ -1,0 +1,21 @@
+@media only screen and (min-width: 38rem) {
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#discover-items div {
+   
+    grid-template-areas:
+    "image title"
+    "image description"
+    "image address"
+}
+
+#discover-items div img {
+   width: 300px;
+}
+
+}

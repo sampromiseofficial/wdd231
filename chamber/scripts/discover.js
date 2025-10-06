@@ -21,3 +21,49 @@ window.addEventListener("resize", () => {
     navbutton.classList.remove("show");
   }
 });
+
+//......File from data/discover.mjs.........//
+import { discoverItems } from "../data/discover.mjs";
+
+//..... Display items.....//
+
+const showHere = document.querySelector("#discover-items");
+
+//....Loop through the array of json items ....//
+function displayItems(items) {
+  items.forEach(item => {
+
+    //..Build the card element...//
+    const card = document.createElement("div");
+
+    //...Build the photo element...//
+    const photo = document.createElement("img");
+    photo.src = "images/$(item.image)"
+    photo.alt = item.title;
+    photo.loading = "lazy";
+    card.appendChild(photo);
+
+    //build the title element...//
+    const title = document.createElement("h3");
+    title.innerText = item.title;
+    card.appendChild(title);
+
+    //...Build the address element...//
+    const address = document.createElement("address");
+    address.innerText = item.address;
+    card.appendChild(address);
+
+    //...Build the description element...//
+    const description = document.createElement("p");
+    description.innerText = item.description;
+    card.appendChild(description);
+
+    //...Append the card to the showHere section...//
+    showHere.appendChild(card);
+
+  }) // ... end loop ...//
+}//... end function ...//
+
+//... Call the function to display items ...//
+displayItems(discoverItems);
+
