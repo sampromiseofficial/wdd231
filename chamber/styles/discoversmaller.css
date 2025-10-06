@@ -104,7 +104,7 @@ h1 {
   grid-template-areas:
     "title"
     "address"
-    "Image"
+    "image"
     "description"
 }
 
@@ -115,7 +115,7 @@ h1 {
 }
 
 #discover-items div img {
-  grid-area: Image;
+  grid-area: image;
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -155,7 +155,7 @@ footer {
   list-style: none;
 }
 
-.socoal a:hover {
+.social a:hover {
   color: #E07A5F;
   font-size: 50px;
 }

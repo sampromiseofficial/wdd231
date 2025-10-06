@@ -11,7 +11,7 @@ export const discoverItems = [
         "id": "item2",
         "title": "Historic Market",
         "address": "45 Old Town Sq",
-        "image": "images/historic-market.webp",
+        "image": "images/market-web.webp",
         "description": "Local market with fresh produce, crafts, and weekend events."
     },
     
@@ -19,7 +19,7 @@ export const discoverItems = [
         "id": "item3",
         "title": "Town Museum",
         "address": "10 Heritage Ln",
-        "image": "images/town-museum.webp",
+        "image": "images/museum-featured.webp",
         "description": "Exhibits about the area's history and notable figures."
     },
     
@@ -27,7 +27,7 @@ export const discoverItems = [
         "id": "item4",
         "title": "Art Walk",
         "address": "Gallery Row",
-        "image": "images/art-walk.webp",
+        "image": "images/artwork-gallery.webp",
         "description": "A collection of galleries and street murals celebrating local artists."
     },
     
@@ -35,15 +35,15 @@ export const discoverItems = [
         "id": "item5",
         "title": "Science Centre",
         "address": "88 Discovery Dr",
-        "image": "images/science-centre.webp",
+        "image": "images/science.webp",
         "description": "Hands-on exhibits for families and school groups."
     },
     
     {
         "id": "item6",
-        "title": "Harbourfront Café",
+        "title": "Harbour Café",
         "address": "7 Dockside Ave",
-        "image": "images/harbourfront-cafe.webp",
+        "image": "images/harbourfront.webp",
         "description": "Popular café with harbour views and local pastries."
     },
     
@@ -51,7 +51,7 @@ export const discoverItems = [
         "id": "item7",
         "title": "Community Theatre",
         "address": "200 Stage St",
-        "image": "images/community-theatre.webp",
+        "image": "images/communitytheatre-ticketing-options.webp",
         "description": "Small theatre with plays, music performances, and workshops."
     },
     
@@ -59,7 +59,7 @@ export const discoverItems = [
         "id": "item8",
         "title": "Botanical Gardens",
         "address": "1 Greenhouse Ln",
-        "image": "images/botanical-gardens.webp",
+        "image": "images/gardens.webp",
         "description": "Beautiful seasonal displays, conservatory, and guided tours."
     }
 ]

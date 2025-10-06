@@ -7,15 +7,28 @@ h1 {
 }
 
 #discover-items div {
-   
+    display: grid;
     grid-template-areas:
-    "image title"
-    "image description"
-    "image address"
+        "image title"
+        "image description"
+        "image address";
 }
 
 #discover-items div img {
-   width: 300px;
+    grid-area: image;
+    width: 300px;
+}
+
+#discover-items div h3 {
+    grid-area: title;
+}
+
+#discover-items div p {
+    grid-area: description;
+}
+
+#discover-items div address {
+    grid-area: address;
 }
 
 }

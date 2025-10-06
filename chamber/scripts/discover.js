@@ -24,6 +24,7 @@ window.addEventListener("resize", () => {
 
 //......File from data/discover.mjs.........//
 import { discoverItems } from "../data/discover.mjs";
+console.log(discoverItems);
 
 //..... Display items.....//
 
@@ -38,7 +39,7 @@ function displayItems(items) {
 
     //...Build the photo element...//
     const photo = document.createElement("img");
-    photo.src = "images/$(item.image)"
+    photo.src = item.image;
     photo.alt = item.title;
     photo.loading = "lazy";
     card.appendChild(photo);
