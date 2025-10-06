@@ -85,10 +85,15 @@ header span {
   color: #E07A5F;
 }
 
-h1 {
-    font-size: 2.5rem;
+h2 {
+    font-size: 1.5rem;
     margin: 1rem 0;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #3D405B;
 }
 
 /* ------------------- discover ------------------- */
@@ -108,7 +113,7 @@ h1 {
     "description"
 }
 
-#discover-items div h3 {
+#discover-items div h2 {
   grid-area: title;
   margin: 1rem 10px;
   color: #3D405B;

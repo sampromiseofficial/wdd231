@@ -45,7 +45,7 @@ function displayItems(items) {
     card.appendChild(photo);
 
     //build the title element...//
-    const title = document.createElement("h3");
+    const title = document.createElement("h2");
     title.innerText = item.title;
     card.appendChild(title);
 
@@ -58,6 +58,12 @@ function displayItems(items) {
     const description = document.createElement("p");
     description.innerText = item.description;
     card.appendChild(description);
+
+    //...Build the learn-more option element...//
+    const learn_more = document.createElement("a");
+    learn_more.innerText = "Learn more";
+    learn_more.href = item.learn_more;
+    card.appendChild(learn_more);
 
     //...Append the card to the showHere section...//
     showHere.appendChild(card);

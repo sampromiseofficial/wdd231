@@ -1,25 +1,29 @@
 export const discoverItems = [
     {
         "id": "item1",
-        "title": "Riverside Park",
+        "title": "Park",
         "address": "123 River Rd",
         "image": "images/riverside-park.webp",
+        "learn_more": "https://www.riversidepark.com",
         "description": "A scenic park along the river with walking trails and picnic spots."
+
     },
 
     {
         "id": "item2",
-        "title": "Historic Market",
+        "title": "Market",
         "address": "45 Old Town Sq",
         "image": "images/market-web.webp",
+        "learn_more": "https://www.historicmarket.com",
         "description": "Local market with fresh produce, crafts, and weekend events."
     },
     
     {
         "id": "item3",
-        "title": "Town Museum",
+        "title": "Museum",
         "address": "10 Heritage Ln",
         "image": "images/museum-featured.webp",
+        "learn_more": "https://www.townmuseum.com",
         "description": "Exhibits about the area's history and notable figures."
     },
     
@@ -28,38 +32,43 @@ export const discoverItems = [
         "title": "Art Walk",
         "address": "Gallery Row",
         "image": "images/artwork-gallery.webp",
+        "learn_more": "https://www.artwalk.com",
         "description": "A collection of galleries and street murals celebrating local artists."
     },
     
     {
         "id": "item5",
-        "title": "Science Centre",
+        "title": "Science",
         "address": "88 Discovery Dr",
         "image": "images/science.webp",
+        "learn_more": "https://www.sciencecentre.com",
         "description": "Hands-on exhibits for families and school groups."
     },
     
     {
         "id": "item6",
-        "title": "Harbour Café",
+        "title": "Café",
         "address": "7 Dockside Ave",
         "image": "images/harbourfront.webp",
+        "learn_more": "https://www.harbourcafe.com",
         "description": "Popular café with harbour views and local pastries."
     },
     
     {
         "id": "item7",
-        "title": "Community Theatre",
+        "title": "Theatre",
         "address": "200 Stage St",
         "image": "images/communitytheatre-ticketing-options.webp",
+        "learn_more": "https://www.communitytheatre.com",
         "description": "Small theatre with plays, music performances, and workshops."
     },
     
     {
         "id": "item8",
-        "title": "Botanical Gardens",
+        "title": "Gardens",
         "address": "1 Greenhouse Ln",
         "image": "images/gardens.webp",
+        "learn_more": "https://www.botanicalgardens.com",
         "description": "Beautiful seasonal displays, conservatory, and guided tours."
     }
 ]
