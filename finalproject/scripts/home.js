@@ -1,8 +1,8 @@
 // ------------------ HAMBURGER MENU ------------------
 const navbutton = document.querySelector("#ham-btn");
 const navlinks = document.querySelector("#primary-nav ul");
-const logo = document.querySelector(".logo");      // header image
-const heading = document.querySelector(".brand span"); // span text
+const logo = document.querySelector("#logo");      // header image
+const heading = document.querySelector("header span"); // span text
 
 navbutton.addEventListener("click", () => {
   navbutton.classList.toggle("show");
@@ -21,7 +21,6 @@ window.addEventListener("resize", () => {
     navbutton.classList.remove("show");
   }
 });
-
 
 // Main JavaScript for Psalm Global Investment website
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,0 +1,47 @@
+/* =======================
+   DESKTOP VIEW (64+)
+======================= */
+@media only screen and (min-width: 64rem) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #primary-nav ul {
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    margin-top: 0;
+  }
+
+  nav a {
+    padding: 0;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  
+  .foot {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
+    .social a {
+        margin-top: 35px;
+    }
+    
+    .social a:hover {
+        color: #E07A5F;
+        font-size: 50px;
+    }
+
+}

@@ -12,13 +12,11 @@
         <meta property="og:url" content="https://yourgithub.io/finalproject/">
         <meta property="og:type" content="website" />
         <link rel="icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/homesmaller.css">
-        <link rel="stylesheet" href="styles/homelarger.css">
-        <script src="scripts/home.js" defer></script>
-        <script src="scripts/business.js" defer></script>
-        <script src="scripts/service.js" defer></script>
+        <link rel="stylesheet" href="styles/businessmall.css">
+        <link rel="stylesheet" href="styles/businessmedium.css">
+        <link rel="stylesheet" href="styles/businesslarge.css">
+        <script src="scripts/business.js" type="module" defer></script>
         <link rel="alternate" type="application/json" href="data/business.json">
-        <link rel="alternate" type="application/json" href="data/service.json">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -40,27 +38,13 @@
     </nav>
     <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
-
-<main>
-<section class="business-control">
-<h2>Our Businesses</h2>
-<div class="controls">
-<input id="search" type="search" placeholder="Search businesses..." aria-label="Search businesses">
-<select id="filter-industry">
-<option value="all">All Industries</option>
-<option value="Automotive">Automotive</option>
-<option value="Oil & Gas">Oil & Gas</option>
-<option value="Gadgets">Gadgets</option>
-<option value="Beverages">Beverages</option>
-<option value="Real Estate">Real Estate</option>
-</select>
-<button id="toggle-view" class="btn">Toggle View</button>
-</div>
-</section>
-
-<section id="businesses-list" class="businesses-list">
-</section> 
-</main>
+  
+  <main>
+    <h1>Our Businesses</h1>
+    <div class="business-groups" id="business-groups">
+      <!-- Business items will be dynamically inserted here -->
+    </div>
+  </main>
 
 
 <footer>

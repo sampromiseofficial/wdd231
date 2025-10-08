@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Psalmtech",
+        "address": "33 Lagos Street",
+        "phone": "+2348105573673",
+        "website": "https://psalmtech.com",
+        "image": "psalmtech.webp",
+        "membershipLevel": 1,
+        "description": "Technology solutions in software, hardware, and forex."
+    },
+  
+    {
+        "name": "PsalmAuto",
+        "address": "12 Stadium Road",
+        "phone": "+2347085952071",
+        "website": "https://allsportsfans.com",
+        "image": "allsportfans.webp",
+        "membershipLevel": 2,
+        "description": "E-commerce platform for sports memorabilia and gear."
+    },
+  
+    {
+        "name": "Wakanow",
+        "address": "45 Market Avenue",
+        "phone": "+2347085952071",
+        "website": "https://greenfoods.com",
+        "image": "greenfoods.webp",
+        "membershipLevel": 3,
+        "description": "Organic foods supplier promoting healthy living."
+    },
+  
+    {
+        "name": "Travelstart",
+        "address": "78 Airport Road",
+        "phone": "+2348105573673",
+        "website": "https://swiftlogistics.com",
+        "image": "swiftlogistics.webp",
+        "membershipLevel": 4,
+        "description": "Fast and reliable delivery services nationwide."
+    },
+  
+    {
+        "name": "Exness trading",
+        "address": "10 Unity Street",
+        "phone": "+2347085952071",
+        "website": "https://brightfutureacademy.edu",
+        "image": "brightfutureacademy.webp",
+        "membershipLevel": 5,
+        "description": "Educational institution focused on STEM excellence."
+    }
+    
+]

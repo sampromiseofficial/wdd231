@@ -1,24 +1,22 @@
 /* =======================
-   DESKTOP VIEW (769px+)
+   DESKTOP VIEW (64+)
 ======================= */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 64rem) {
   header {
-    text-align: left;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
 
   .hamburger {
-    display: none; /* hide hamburger on desktop */
+    display: none;
   }
 
-  nav ul {
+  #primary-nav ul {
     display: flex !important;
     flex-direction: row;
-    gap: 1rem;
     background: none;
-    padding: 0;
+    margin-top: 0;
   }
 
   nav a {
@@ -30,12 +28,6 @@
     margin: 0 auto;
   }
 
-  .business-card {
-    display: inline-block;
-    width: 45%;
-    vertical-align: top;
-    margin: 1rem 2%;
-  }
   
   .foot {
         flex-direction: row;
@@ -46,9 +38,10 @@
     .social a {
         margin-top: 35px;
     }
-    
-    .socoal a:hover {
+
+    .social a:hover {
         color: #E07A5F;
         font-size: 50px;
     }
+
 }

@@ -1,0 +1,124 @@
+/* =======================
+   MOBILE VIEW
+======================= */
+header {
+  display: flex;
+  flex-direction: column; /* stack brand, then nav */
+  align-items: center; /* center content horizontally */
+  background: #004080;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+header span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: none; /* hidden by default for mobile */
+  flex-direction:column;
+  gap: 0.5rem;
+  background: #003366;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin: 0; /* reset default margin */
+}
+
+#primary-nav ul.show {
+  display: flex;
+}
+
+#primary-nav ul {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background: #003366;
+  padding: 0.5rem;
+  margin-top: 1rem; /* pushes it below brand */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #0059b3;
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "\2630"; /* ☰ menu icon */
+}
+
+.hamburger.show::before {
+  content: "\00d7"; /* × close icon */
+}
+
+.hide {
+  display: none !important;
+}
+
+/* =======================
+   MAIN CONTENT
+======================= */
+main {
+  padding: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #004080;
+  color: #fff;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.socoal a:hover {
+  color: #E07A5F;
+  font-size: 50px;
+}
