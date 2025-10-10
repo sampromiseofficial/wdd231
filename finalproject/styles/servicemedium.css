@@ -2,5 +2,28 @@
    MEDIUM VIEW (38+)
 ======================= */
 @media only screen and (min-width: 38rem) {
+     main {
+    padding: 3rem 2rem;
+  }
 
+  #service.grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+  .menu {
+   display: none; /* hide on small screens */
+  }
+
+  .service-card img {
+    height: 200px;
+  }
+
+  /* Default grid layout before any button click */
+    #service {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }

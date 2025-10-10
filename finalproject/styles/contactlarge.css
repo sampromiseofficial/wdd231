@@ -23,30 +23,49 @@
     padding: 0;
   }
 
-    main {
-    padding: 4rem 3rem;
+  /****form****/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
-  .business-groups {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    .form-container {
+    max-width: 900px;
+    padding: 3rem;
   }
 
-  .business-groups div {
-    padding: 2rem;
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
   }
 
-  .business-groups img {
-    height: 240px;
+  /* Make specific elements span both columns */
+  textarea,
+  select,
+  button,
+  label[for="message"],
+  label[for="organization"] {
+    grid-column: span 2;
+  }
+
+  button {
+    justify-self: center;
+    width: 40%;
   }
 
   main h1 {
     font-size: 2.2rem;
   }
-}
-  
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /*****footer******/
+
   .foot {
         flex-direction: row;
         justify-content: space-around;
@@ -61,3 +80,5 @@
         color: #E07A5F;
         font-size: 50px;
     }
+
+}

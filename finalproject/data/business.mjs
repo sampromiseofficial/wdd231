@@ -3,9 +3,9 @@ export const businessGroups = [
         "id": "business1",
         "title": "Psalmtech ",
         "address": "123 City Rd",
-        "image": "images/riverside-park.webp",
-        "learn_more": "https://www.riversidepark.com",
-        "description": "A scenic park along the City."
+        "image": "images/psalmtech1.webp",
+        "learn_more": "https://www.psalmtech.com",
+        "description": "A leading tech company specializing in innovative solutions."
 
     },
 
@@ -13,7 +13,7 @@ export const businessGroups = [
         "id": "business2",
         "title": "Psalm Auto",
         "address": "45 Old Town Sq",
-        "image": "images/market-web.webp",
+        "image": "images/toyota.webp",
         "learn_more": "https://www.historicmarket.com",
         "description": "Local market with fresh produce, crafts, and weekend events."
     },
@@ -22,7 +22,7 @@ export const businessGroups = [
         "id": "business3",
         "title": "Wakanow",
         "address": "10 Heritage Ln",
-        "image": "images/museum-featured.webp",
+        "image": "images/wakanow.webp",
         "learn_more": "https://www.townmuseum.com",
         "description": "Exhibits about the area's history and notable figures."
     },
@@ -31,7 +31,7 @@ export const businessGroups = [
         "id": "business4",
         "title": "TravelStart",
         "address": "Gallery Row",
-        "image": "images/artwork-gallery.webp",
+        "image": "images/travelstart.webp",
         "learn_more": "https://www.artwalk.com",
         "description": "A collection of galleries and street murals celebrating local artists."
     },
@@ -40,7 +40,7 @@ export const businessGroups = [
         "id": "business5",
         "title": "Exness trade",
         "address": "88 Discovery Dr",
-        "image": "images/science.webp",
+        "image": "images/exness.webp",
         "learn_more": "https://www.sciencecentre.com",
         "description": "Hands-on exhibits for families and school groups."
     },

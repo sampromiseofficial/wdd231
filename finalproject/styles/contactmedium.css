@@ -2,20 +2,24 @@
    MEDIUM VIEW (38+)
 ======================= */
 @media only screen and (min-width: 38rem) {
-     main {
+      main {
     padding: 3rem 2rem;
   }
 
-  .business-groups {
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  /*****form*****/
+
+  .form-container {
+    padding: 2.5rem;
   }
 
   main h1 {
     font-size: 2rem;
   }
 
-  .business-groups img {
-    height: 220px;
+  button {
+    align-self: flex-start;
+    width: auto;
+    padding: 0.9rem 1.5rem;
   }
-}
+} 
+

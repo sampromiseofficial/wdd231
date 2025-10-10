@@ -23,12 +23,73 @@
     padding: 0;
   }
 
+  /****main content****/
   main {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 4rem 3rem;
   }
 
-  
+  /* Default grid layout before any button click */
+  #service {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* When Grid button is clicked */
+  #service.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* When List button is clicked */
+  #service.list {
+    display: block;
+  }
+
+  .service-card {
+    padding: 2rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.3rem;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+  }
+
+  .service-card h2 {
+    font-size: 1.3rem;
+  }
+
+  /* Show menu only on large view */
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+
+  .menu button {
+    background-color: #222;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  .menu button:hover {
+    background-color: #444;
+  }
+
   .foot {
         flex-direction: row;
         justify-content: space-around;

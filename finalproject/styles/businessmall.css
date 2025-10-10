@@ -86,13 +86,93 @@ nav a:hover {
 /* =======================
    MAIN CONTENT
 ======================= */
-main {
-  padding: 1.5rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
+/* ========== Page Layout ========== */
+main {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 2rem 1rem;
   text-align: center;
+}
+
+main h1 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+/* ========== Business Group Container ========== */
+.business-groups {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* ========== Business Card ========== */
+.business-groups div {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-groups div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* ========== Image Styling ========== */
+.business-groups img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.8rem;
   margin-bottom: 1rem;
+}
+
+/* ========== Text Styling ========== */
+.business-groups h2 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.business-groups address {
+  font-style: normal;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+}
+
+.business-groups p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* ========== Link Styling ========== */
+.business-groups a {
+  display: inline-block;
+  background-color: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.business-groups a:hover {
+  background-color: #004999;
 }
 
 /* =======================

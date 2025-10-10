@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>contact us - Oni Samson Promise</title>
+        <title>contact - Oni Samson Promise</title>
         <meta name="description" content="Psalm Global Investment - a diversified holding company in automotive, oil & gas, gadgets, beverages, and real estate.">
         <meta name="author" content="Oni Samson Promise">
         <meta property="og:title" content="Psalm Global Investment">
@@ -12,12 +12,12 @@
         <meta property="og:url" content="https://yourgithub.io/finalproject/">
         <meta property="og:type" content="website" />
         <link rel="icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/contactsmall.css">
-        <link rel="stylesheet" href="styles/contactmedium.css">
-        <link rel="stylesheet" href="styles/contactlarge.css">
-        <script src="scripts/contact.js" type="module" defer></script>
+        <link rel="stylesheet" href="styles/homesmall.css">
+        <link rel="stylesheet" href="styles/homelarge.css">
+        <script src="scripts/form_action.js" defer></script>
         <script src="scripts/date.js" defer></script>
         <link rel="alternate" type="application/json" href="data/business.json">
+        <link rel="alternate" type="application/json" href="data/service.json">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -39,49 +39,18 @@
     </nav>
     <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
-  
-  <main>
-            <h1>We do love hearing from you</h1>
-    <div class="form-container">
-      <form method="get" action="form_action.html">
-        
-        <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
-        
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required autocomplete="email">
-        
-        <label for="phone">Mobile Phone:</label>
-        <input type="tel" id="phone" name="phone"  pattern="[0-9 ]+"  title="Please enter numbers and spaces only" required autocomplete="tel">
-        
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required autocomplete="off">
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required autocomplete="off"></textarea>
-        
-        <label for="organization">Organization:</label>
-        <select id="organization" name="organization" required>
-          <option value="" disabled selected>Select Organization</option>
-          <option value="psalmtech">Psalmtech</option>
-          <option value="psalmauto">Psalm Auto</option>
-          <option value="wakanow">Wakanow</option>
-          <option value="travelstart">Travelstart</option>
-          <option value="exness">Exness Trade</option>
-          <option value="all">All</option>
-        </select>
 
-        <!-- Hidden timestamp -->
-        <input type="hidden" name="timestamp" id="timestamp">
-        <button type="submit">Submit</button>
-      </form>
+
+<main>
+<section>
+    <div class="thank-result">
+        <h4>Responses Received Successfully</h4>
+        <div id="results"></div>
     </div>
-  </main>
+</section>
+</main>
 
-<footer>
+        <footer>
             <div class="foot">
                 <div class="address">
                     <h3>Samson Chamber of Commerce</h3>
