@@ -106,8 +106,8 @@ nav .current a {
 /* HAMBURGER MENU */
 .hamburger {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.05rem;
+  right: 0.05rem;
   background: none;
   border: none;
   font-size: 2rem;

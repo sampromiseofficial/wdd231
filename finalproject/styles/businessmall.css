@@ -127,15 +127,9 @@ nav .current a {
   display: flex;
 }
 
-
 /* =======================
    MAIN CONTENT
 ======================= */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 /* ========== Page Layout ========== */
 main {
