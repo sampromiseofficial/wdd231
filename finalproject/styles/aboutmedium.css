@@ -1,0 +1,49 @@
+/* =======================
+   MEDIUM VIEW (38+)
+======================= */
+@media only screen and (min-width: 38rem) {
+  .lead {
+    padding: 2rem;
+    max-width: 700px;
+  }
+
+  .lead h2 {
+    font-size: 2rem;
+  }
+
+  .lead p {
+    font-size: 1.1rem;
+  }
+
+  .values {
+    padding: 2rem;
+  }
+
+  .values h3 {
+    font-size: 1.6rem;
+  }
+
+  .values ul {
+    max-width: 80%;
+  }
+
+  .values li {
+    padding: 1.2rem;
+    font-size: 1.05rem;
+  }
+
+  .leadership {
+    padding: 2.5rem 2rem;
+  }
+
+  .leadership .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .card img {
+    height: 250px;
+  }
+}

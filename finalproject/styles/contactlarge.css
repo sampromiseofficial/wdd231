@@ -19,66 +19,50 @@
     margin-top: 0;
   }
 
-  nav a {
-    padding: 0;
-  }
-
   /****form****/
   
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  .contact-page {
+    padding: 3rem 0;
   }
 
-    .form-container {
-    max-width: 900px;
-    padding: 3rem;
+  .contact-page h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .form-container {
+    max-width: 800px;
+    padding: 2.5rem 3rem;
   }
 
   form {
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 1.5rem 2rem;
   }
 
-  /* Make specific elements span both columns */
+  /* Make message and button span full width */
   textarea,
-  select,
-  button,
-  label[for="message"],
-  label[for="organization"] {
+  button {
     grid-column: span 2;
   }
 
   button {
-    justify-self: center;
     width: 40%;
+    justify-self: center;
   }
 
-  main h1 {
-    font-size: 2.2rem;
+  button:hover {
+    background: #0059b3;
   }
-    main {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+
 
     /*****footer******/
 
-  .foot {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-    }
-    
-    .social a {
-        margin-top: 35px;
-    }
-    
-    .social a:hover {
-        color: #E07A5F;
-        font-size: 50px;
-    }
+      .foot {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 
 }

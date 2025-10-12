@@ -19,10 +19,6 @@
     margin-top: 0;
   }
 
-  nav a {
-    padding: 0;
-  }
-
   /****main content****/
   main {
     padding: 4rem 3rem;
@@ -90,19 +86,10 @@
     background-color: #444;
   }
 
-  .foot {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-    }
-    
-    .social a {
-        margin-top: 35px;
-    }
-
-    .social a:hover {
-        color: #E07A5F;
-        font-size: 50px;
-    }
+    .foot {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 
 }
