@@ -11,6 +11,11 @@
   .hamburger {
     display: none;
   }
+  
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 
   #primary-nav ul {
     display: flex !important;

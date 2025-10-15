@@ -9,7 +9,7 @@
   }
 
   .hamburger {
-    display: none;
+    display: none; /* hide hamburger on desktop */
   }
 
   #primary-nav ul {
@@ -19,15 +19,9 @@
     margin-top: 0;
   }
 
-  /****form****/
-  
-  .contact-page {
-    padding: 3rem 0;
-  }
-
-  .contact-page h1 {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   .form-container {
@@ -36,12 +30,11 @@
   }
 
   form {
-    grid-template-columns: repeat(2, 1fr);
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem 2rem;
   }
 
-  /* Make message and button span full width */
   textarea,
   button {
     grid-column: span 2;
@@ -51,18 +44,14 @@
     width: 40%;
     justify-self: center;
   }
-
-  button:hover {
-    background: #0059b3;
-  }
-
-
-    /*****footer******/
-
-      .foot {
+  
+  .foot {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    display: flex;
+    gap: 15rem;
   }
+
 
 }

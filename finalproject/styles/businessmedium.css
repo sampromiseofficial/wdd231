@@ -1,21 +1,12 @@
-/* =======================
-   MEDIUM VIEW (38+)
-======================= */
+/* ====================================
+   MEDIUM VIEW (min-width: 38rem)
+==================================== */
 @media only screen and (min-width: 38rem) {
-     main {
-    padding: 3rem 2rem;
-  }
-
+  main { padding: 3rem 2rem; }
+  main h1 { font-size: 2rem; }
   .business-groups {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
-
-  main h1 {
-    font-size: 2rem;
-  }
-
-  .business-groups img {
-    height: 220px;
-  }
+  .business-groups img { height: 220px; }
 }

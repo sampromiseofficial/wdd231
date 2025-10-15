@@ -1,6 +1,6 @@
-/* =======================
-   MOBILE VIEW
-======================= */
+/* ====================================
+   SMALL VIEW (default: mobile-first)
+==================================== */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
 
+/* ---------- Buttons ---------- */
 .btn {
   display: inline-block;
   background: #004080;
@@ -34,25 +35,18 @@ h1, h2, h3, h4 {
   text-decoration: none;
   transition: background 0.3s;
 }
-
-.btn:hover {
-  background: #0059b3;
-}
-
+.btn:hover { background: #0059b3; }
 .btn.ghost {
   background: transparent;
   border: 2px solid #004080;
   color: #004080;
 }
-
 .btn.ghost:hover {
   background: #004080;
   color: #fff;
 }
 
-/* ================================
-   HEADER
-=================================== */
+/* ---------- Header ---------- */
 header {
   display: flex;
   flex-direction: column;
@@ -79,6 +73,7 @@ header span {
   font-weight: bold;
 }
 
+/* ---------- Navigation ---------- */
 nav ul {
   list-style: none;
   display: none;
@@ -103,33 +98,24 @@ nav .current a {
   background: #0059b3;
 }
 
-/* HAMBURGER MENU */
+/* ---------- Hamburger Menu ---------- */
 .hamburger {
   position: absolute;
-  top: 0.05rem;
-  right: 0.05rem;
+  top: 0.08rem;
+  right: 1rem;
   background: none;
   border: none;
   font-size: 2rem;
   color: #fff;
   cursor: pointer;
 }
+.hamburger::before { content: "\2630"; }
+.hamburger.show::before { content: "\00d7"; }
 
-.hamburger::before {
-  content: "\2630"; /* menu icon */
-}
-
-.hamburger.show::before {
-  content: "\00d7"; /* close icon */
-}
-
-#primary-nav ul.show {
-  display: flex;
-}
-
+#primary-nav ul.show { display: flex; }
 
 /* =======================
-   MAIN CONTENT
+   HERO IMAGE
 ======================= */
 .hero-img {
   width: 100%;
@@ -138,37 +124,29 @@ nav .current a {
 
 .hero-img img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 60vh;
   object-fit: cover;
-  filter: brightness(0.8);
+  filter: brightness(0.9);
 }
 
-/* ================================
-   CONTACT PAGE
-================================ */
-.contact-page {
+/* =======================
+   CONTACT PAGE CONTENT
+======================= */
+h1 {
   text-align: center;
-  padding: 1.5rem 1rem;
-}
-
-.contact-page h1 {
   color: #004080;
   font-size: 1.8rem;
   margin-top: 1.5rem;
   margin-bottom: 1.2rem;
-  border-bottom: 3px solid #ff7b00;
-  display: inline-block;
-  padding-bottom: 0.4rem;
 }
 
-/* ================================
+/* =======================
    FORM STYLING
-================================ */
+======================= */
 .form-container {
   background: #fff;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -215,13 +193,15 @@ textarea {
 button {
   background: #004080;
   color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
   border: none;
   border-radius: 6px;
   padding: 0.9rem;
   cursor: pointer;
   transition: background 0.3s ease;
+}
+
+button:hover {
+  
 }
 
 /* =======================
@@ -238,12 +218,33 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  text-align: center;
 }
 
 .address h3 {
   margin-bottom: 0.5rem;
 }
 
+.social {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #004080;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: grid;
+  justify-content: center;
+}
+.foot {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.address h3 { margin-bottom: 0.5rem; }
 .social {
   display: flex;
   gap: 1rem;

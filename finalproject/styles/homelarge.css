@@ -1,19 +1,29 @@
-/* DESKTOP VIEW (min-width: 64rem) */
+/* ========================================
+   LARGE VIEWPORT (DESKTOP: ≥ 64rem)
+   ======================================== */
 @media only screen and (min-width: 64rem) {
-  header {
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .site-header {
     flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: left;
   }
 
   .hamburger {
     display: none;
   }
 
-  nav ul {
+  .primary-nav ul {
     display: flex !important;
     flex-direction: row;
     background: none;
+    margin-top: 0;
   }
 
   .hero {
@@ -21,8 +31,10 @@
   }
 
   .hero-inner {
-    left: 10%;
+    left: 45%;
+    top: 38%;
     transform: translateY(-50%);
+    width: 45%;
   }
 
   .grid.grid-3 {

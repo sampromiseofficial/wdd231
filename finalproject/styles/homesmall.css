@@ -1,6 +1,6 @@
-/* ================================
-   GLOBAL STYLES
-=================================== */
+/* ====================================
+   SMALL VIEW (default: mobile-first)
+==================================== */
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +25,7 @@ h1, h2, h3, h4 {
   margin-bottom: 0.5rem;
 }
 
+/* ---------- Buttons ---------- */
 .btn {
   display: inline-block;
   background: #004080;
@@ -34,25 +35,18 @@ h1, h2, h3, h4 {
   text-decoration: none;
   transition: background 0.3s;
 }
-
-.btn:hover {
-  background: #0059b3;
-}
-
+.btn:hover { background: #0059b3; }
 .btn.ghost {
   background: transparent;
   border: 2px solid #004080;
   color: #004080;
 }
-
 .btn.ghost:hover {
   background: #004080;
   color: #fff;
 }
 
-/* ================================
-   HEADER
-=================================== */
+/* ---------- Header ---------- */
 header {
   display: flex;
   flex-direction: column;
@@ -79,6 +73,7 @@ header span {
   font-weight: bold;
 }
 
+/* ---------- Navigation ---------- */
 nav ul {
   list-style: none;
   display: none;
@@ -103,7 +98,7 @@ nav .current a {
   background: #0059b3;
 }
 
-/* HAMBURGER MENU */
+/* ---------- Hamburger Menu ---------- */
 .hamburger {
   position: absolute;
   top: 1rem;
@@ -114,22 +109,14 @@ nav .current a {
   color: #fff;
   cursor: pointer;
 }
+.hamburger::before { content: "\2630"; }
+.hamburger.show::before { content: "\00d7"; }
 
-.hamburger::before {
-  content: "\2630"; /* menu icon */
-}
+#primary-nav ul.show { display: flex; }
 
-.hamburger.show::before {
-  content: "\00d7"; /* close icon */
-}
-
-#primary-nav ul.show {
-  display: flex;
-}
-
-/* ================================
+/* ========================================
    HERO SECTION
-=================================== */
+   ======================================== */
 .hero {
   position: relative;
   text-align: center;
@@ -140,7 +127,6 @@ nav .current a {
 
 .hero-img img {
   width: 100%;
-  height: auto;
   opacity: 0.3;
 }
 
@@ -149,30 +135,30 @@ nav .current a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
   padding: 1rem;
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
 .hero h2 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
 }
 
 .cta {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.6rem;
   align-items: center;
 }
 
-/* ================================
+/* ========================================
    CTA BANNER
-=================================== */
+   ======================================== */
 .cta-banner {
   background: #ff7b00;
   color: #fff;
@@ -190,17 +176,17 @@ nav .current a {
   color: #fff;
 }
 
-/* ================================
+/* ========================================
    ABOUT SECTION
-=================================== */
+   ======================================== */
 .about-intro {
   text-align: center;
   padding: 2rem 1rem;
 }
 
-/* ================================
+/* ========================================
    PARTNERS
-=================================== */
+   ======================================== */
 .partners {
   text-align: center;
   padding: 2rem 1rem;
@@ -210,12 +196,12 @@ nav .current a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-/* ================================
+/* ========================================
    NEWSLETTER
-=================================== */
+   ======================================== */
 .newsletter {
   background: #004080;
   color: #fff;
@@ -249,9 +235,9 @@ nav .current a {
   background: #e06b00;
 }
 
-/* ================================
+/* ========================================
    PROJECTS
-=================================== */
+   ======================================== */
 .projects {
   padding: 2rem 1rem;
   text-align: center;
@@ -265,8 +251,7 @@ nav .current a {
 .card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 
@@ -275,9 +260,47 @@ nav .current a {
   color: #004080;
 }
 
-/* ================================
+/* Dialog / Modal */
+.button {
+  background: #004080;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #0059b3;
+}
+
+dialog[open] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fefefe;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* ========================================
    FOOTER
-=================================== */
+   ======================================== */
 footer {
   background: #004080;
   color: #fff;
@@ -289,10 +312,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-}
-
-.address h3 {
-  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .social {

@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #1e90ff; /*Dodger Blue*/
+    --text-color1: #333333; /*Dark Gray*/
+    --text-color2: #f0f0f0; /* white2*/
+    --background1-color: #ffffff; /*White*/
+    --background2-color: #121212; /*Charcoal*/
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    padding: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--background2-color);
+    color: var(--text-color);
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr; /* logo then text */
+    align-items: center; /* vertically center */
+    text-align: right;
+    margin-top: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+header img {
+    height: 60px;
+    border-radius: 0.2rem;
+}
+
+h1 {
+    display: grid;
+    text-align: center;
+    font-size: xx-large;
+    font-family: var(--body-font);
+    color: #333333;
+}
+
+h2, h3 {
+    color: var(--text-color);
+    font-size: xx-large;
+    font-family: var(--body-font);
+}
+
+h4 {
+    color: var(--text-color);
+    font-size: large;
+    font-family: var(--body-font); 
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+ul li {
+    font-family: var(--body-font);
+}
+
+.wireframes {
+    background-color: var(--background1-color);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.wireframes img {
+    width: 100%;
+    max-width: 20%;
+    height: auto;
+    border: 1px solid var(--background1-color);
+    padding: 0.5rem;
+}

@@ -1,6 +1,6 @@
-/* =======================
-   DESKTOP VIEW (64+)
-======================= */
+/* ============================================
+   DESKTOP VIEW (≥ 64rem)
+============================================ */
 @media only screen and (min-width: 64rem) {
   header {
     flex-direction: row;
@@ -19,15 +19,16 @@
     margin-top: 0;
   }
 
-    main {
-    padding: 4rem 3rem;
+  body {
+    max-width: 1500px;
+    margin: 0 auto;
   }
 
   main h1 {
     font-size: 2.2rem;
   }
 
-    .lead {
+  .lead {
     max-width: 1000px;
     padding: 3rem 0;
   }
@@ -78,10 +79,13 @@
   .card img {
     height: 280px;
   }
-}
 
+  /* --- Footer --- */
   .foot {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
+    gap: 8rem;
   }
+}

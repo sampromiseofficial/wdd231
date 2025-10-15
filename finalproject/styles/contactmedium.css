@@ -2,17 +2,13 @@
    MEDIUM VIEW (38+)
 ======================= */
 @media only screen and (min-width: 38rem) {
-  .contact-page {
-    padding: 2rem;
-  }
-
-  .contact-page h1 {
-    font-size: 2rem;
-  }
-
   .form-container {
     max-width: 600px;
     padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   label {
@@ -29,5 +25,3 @@
     font-size: 1.05rem;
   }
 }
-
-

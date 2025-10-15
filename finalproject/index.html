@@ -23,14 +23,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
-<body>
+
+    <body>
   <header class="site-header">
     <div id="brand" class="brand">
       <a href="index.html">
-        <img src="images/PGI_logo.webp" alt="logo" class="logo" loading="lazy">
+        <img src="images/PGI_logo.webp" alt="Psalm Global Investment logo" class="logo" loading="lazy">
       </a>
       <span>Psalm Global Investment</span>
     </div>
+
     <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -40,50 +42,49 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+
     <button id="ham-btn" class="hamburger" aria-label="Toggle navigation"></button>
   </header>
 
   <main>
-      <picture class="hero-img">
-    <img src="images/Welcome to Psalm Global Investment.webp" alt="business professionals and global industries" loading="lazy">
-  </picture>
     <section class="hero">
-  <div class="hero-inner">
-    <h1>Welcome to Psalm Global Investment</h1>
-    <h2>Empowering Growth Across Industries</h2>
-    <p>We build sustainable value across automotive, energy, tech, beverages, and real estate sectors — creating impact in every business we touch.</p>
-    <div class="cta">
-      <a class="btn" href="business.html">Explore Our Ventures</a>
-      <a class="btn ghost" href="contact.html">Partner With Us</a>
-    </div>
-  </div>
-</section>
+      <picture class="hero-img">
+        <img src="images/Welcome to Psalm Global Investment.webp" alt="Business professionals and global industries" loading="lazy">
+      </picture>
+      <div class="hero-inner">
+        <h1>Welcome to Psalm Global Investment</h1>
+        <h2>Empowering Growth Across Industries</h2>
+        <p>We build sustainable value across automotive, energy, tech, beverages, and real estate sectors — creating impact in every business we touch.</p>
+        <div class="cta">
+          <a class="btn" href="business.html">Explore Our Ventures</a>
+          <a class="btn ghost" href="contact.html">Partner With Us</a>
+        </div>
+      </div>
+    </section>
 
-<section class="cta-banner">
-  <h3>Invest with Confidence. Grow with PGI.</h3>
-  <a class="btn" href="contact.html">Get Started</a>
-</section>
+    <section class="cta-banner">
+      <h3>Invest with Confidence. Grow with PGI.</h3>
+      <a class="btn" href="contact.html">Get Started</a>
+    </section>
 
-<section class="about-intro">
-  <h3>Who We Are</h3>
-  <p>Psalm Global Investment (PGI) is a diversified conglomerate with interests in automotive, technology, travel & tourism, and real estate. We are committed to delivering excellence and creating long-term value for our partners and communities.</p>
-</section>
+    <section class="about-intro">
+      <h3>Who We Are</h3>
+      <p>Psalm Global Investment (PGI) is a diversified conglomerate with interests in automotive, technology, travel & tourism, and real estate. We are committed to delivering excellence and creating long-term value for our partners and communities.</p>
+    </section>
 
-<section class="partners">
-  <h3>Our Partners</h3>
-  <div class="logos">
-    <img src="images/exness.webp" alt="Exness">
-    <img src="images/travelstart.webp" alt="Travelstart">
-    <img src="images/wakanow.webp" alt="Wakanow">
-  </div>
-</section>
+    <section class="partners">
+      <h3>Our Partners</h3>
+      <div class="logos">
+        <img src="images/exness.webp" alt="Exness logo">
+        <img src="images/travelstart.webp" alt="Travelstart logo">
+        <img src="images/wakanow.webp" alt="Wakanow logo">
+      </div>
+    </section>
 
-    <!-- NEWSLETTER SECTION -->
     <section class="newsletter">
       <div class="newsletter-container">
         <h3>Stay Updated with Psalm Global Investment</h3>
         <p>Subscribe to our newsletter for insights, news, and business opportunities.</p>
-
         <form id="newsletter-form" class="newsletter-form" method="post" action="#">
           <label for="subscriber-name" class="visually-hidden">Full Name</label>
           <input type="text" id="subscriber-name" name="name" placeholder="Enter your name" required>
@@ -95,55 +96,71 @@
         </form>
       </div>
     </section>
+
+    <section class="projects">
+      <h3>Recent Highlights</h3>
+      <div class="grid grid-3">
+        
+        <article class="card">
+          <img src="images/toyota.webp" alt="Automotive project">
+          <h4>Psalm Auto</h4>
+          <button class="button open-button" data-dialog="dialog-auto">View More</button>
+          <dialog id="dialog-auto">
+            <h2>More about Psalm Auto</h2>
+            <p>Psalm Auto is leading innovation in sustainable automotive and energy operations across Africa.</p>
+            <button class="close-button" aria-label="Close dialog">❌</button>
+          </dialog>
+        </article>
+
+        <article class="card">
+          <img src="images/Psalmtech1.webp" alt="Tech growth project">
+          <h4>Psalmtech</h4>
+          <button class="button open-button" data-dialog="dialog-tech">View More</button>
+          <dialog id="dialog-tech">
+            <h2>More about Psalmtech</h2>
+            <p>Our Psalmtech division introduces smart solutions and high-end gadgets to global markets.</p>
+            <button class="close-button" aria-label="Close dialog">❌</button>
+          </dialog>
+        </article>
+
+        <article class="card">
+          <img src="images/project3.webp" alt="Real estate project">
+          <h4>Psalm Real Estate & Developments</h4>
+          <button class="button open-button" data-dialog="dialog-estate">View More</button>
+          <dialog id="dialog-estate">
+            <h2>More about Psalm Real Estate</h2>
+            <p>Psalm Real Estate delivers modern, sustainable housing and business properties across key markets.</p>
+            <button class="close-button" aria-label="Close dialog">❌</button>
+          </dialog>
+        </article>
+      </div>
+    </section>
   </main>
 
-<section class="projects">
-  <h3>Recent Highlights</h3>
-  <div class="grid grid-3">
-    <article class="card">
-      <img src="images/toyota.webp" alt="automotive">
-      <h4>Expansion into Renewable Energy</h4>
-      <p>PGI is leading innovation in sustainable oil and gas operations across Africa.</p>
-    </article>
-    <article class="card">
-      <img src="images/Psalmtech1.webp" alt="Tech growth">
-      <h4>Psalmtech</h4>
-      <p>Our Psalmtech division introduces smart solutions and high-end gadgets to global markets.</p>
-    </article>
-    <article class="card">
-      <img src="images/project3.webp" alt="Real estate">
-      <h4>Psalm Real Estate & Developments</h4>
-      <p>Psalm Real Estate delivers modern, sustainable housing and business properties.</p>
-    </article>
-  </div>
-</section>
+  <footer>
+    <div class="foot">
+      <div class="address">
+        <h3>Samson Chamber of Commerce</h3>
+        <p>Ikeja, Lagos, Nigeria</p>
+        <a href="mailto:sampromiseofficial@gmail.com">sampromiseofficial@gmail.com</a>
+        <p>(+234) 810 557 3673</p>
+      </div>
 
-  </main>
+      <div class="social">
+        <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="GitHub" width="16" height="16"></a>
+        <a href="https://linkedin.com/in/samson-oni-9611a8266" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+        <a href="https://facebook.com/psalmproxy1010" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+        <a href="https://twitter.com/psalmproxy" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+      </div>
 
-        <footer>
-            <div class="foot">
-                <div class="address">
-                    <h3>Samson Chamber of Commerce</h3>
-                    <p> Ikeja</p>
-                    <p>Lagos, Nigeria</p>
-                    <a href="mailto:sampromiseofficial@gmail.com">sampromiseofficial</a>
-                    <p>(234) 810557 3673</p>
-                </div>
-                
-                <div class="social">
-                    <a href="http://www.youtube.com/channel/UCs6_XhyRiWfpffFfzHfmHxA" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
-                    <a href="http://linkedin.com/in/samson-oni-9611a8266" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
-                    <a href="http://facebook.com/psalmproxy1010?mibextid=ZbWKwL" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
-                    <a href="http://twitter.com/psalmproxy" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
-                </div>
-                
-                <div class="address">
-                    <h3>WDD231 Class Project</h3>
-                    <h3>Oni Samson Promise</h3>
-                    <p>&copy; <span id="current-year"></span> Samson Chamber of commerce</p>
-                    <p>Last Modification: <span id="last-modified"></span></p>
-                </div>
-            </div>
-        </footer>
+      <div class="address">
+        <h3>WDD231 Class Project</h3>
+        <h3>Oni Samson Promise</h3>
+        <p>&copy; <span id="current-year"></span> Samson Chamber of Commerce</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

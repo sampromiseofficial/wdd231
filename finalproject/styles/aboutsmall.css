@@ -1,6 +1,6 @@
-/* =======================
-   MOBILE VIEW
-======================= */
+/* ============================================
+   GLOBAL RESET & BASE STYLES (Mobile First)
+============================================ */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.7;
   color: #333;
   background-color: #f7f9fc;
 }
@@ -23,36 +23,16 @@ img {
 h1, h2, h3, h4 {
   color: #004080;
   margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
 }
 
-.btn {
-  display: inline-block;
-  background: #004080;
-  color: #fff;
-  padding: 0.75rem 1.25rem;
-  border-radius: 5px;
+a {
   text-decoration: none;
-  transition: background 0.3s;
 }
 
-.btn:hover {
-  background: #0059b3;
-}
-
-.btn.ghost {
-  background: transparent;
-  border: 2px solid #004080;
-  color: #004080;
-}
-
-.btn.ghost:hover {
-  background: #004080;
-  color: #fff;
-}
-
-/* ================================
+/* ============================================
    HEADER
-=================================== */
+============================================ */
 header {
   display: flex;
   flex-direction: column;
@@ -79,6 +59,7 @@ header span {
   font-weight: bold;
 }
 
+/* --- Navigation --- */
 nav ul {
   list-style: none;
   display: none;
@@ -92,10 +73,9 @@ nav ul {
 
 nav a {
   color: #fff;
-  text-decoration: none;
   padding: 0.5rem 1rem;
-  display: block;
   border-radius: 4px;
+  display: block;
 }
 
 nav a:hover,
@@ -103,7 +83,7 @@ nav .current a {
   background: #0059b3;
 }
 
-/* HAMBURGER MENU */
+/* --- Hamburger Menu --- */
 .hamburger {
   position: absolute;
   top: 1rem;
@@ -127,18 +107,9 @@ nav .current a {
   display: flex;
 }
 
-
-/* =======================
-   MAIN CONTENT
-======================= */
-body {
-  font-family: "Poppins", sans-serif;
-  color: #222;
-  background-color: #fff;
-  line-height: 1.6;
-}
-
-/* --- Hero Section --- */
+/* ============================================
+   HERO SECTION
+============================================ */
 .hero-img {
   width: 100%;
   overflow: hidden;
@@ -146,13 +117,14 @@ body {
 
 .hero-img img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 60vh;
   object-fit: cover;
   filter: brightness(0.9);
 }
 
-/* --- Lead Section --- */
+/* ============================================
+   LEAD SECTION
+============================================ */
 .lead {
   text-align: center;
   padding: 1.8rem 1rem;
@@ -162,9 +134,8 @@ body {
 
 .lead h2 {
   font-size: 1.6rem;
-  color: #004aad;
+  color: #004080;
   margin-bottom: 1rem;
-  border-bottom: 3px solid #ff7b00;
   display: inline-block;
   padding-bottom: 0.3rem;
 }
@@ -175,7 +146,9 @@ body {
   margin-top: 0.8rem;
 }
 
-/* --- Values Section --- */
+/* ============================================
+   VALUES SECTION
+============================================ */
 .values {
   background-color: #f8f9fb;
   padding: 1.8rem 1rem;
@@ -183,7 +156,7 @@ body {
 }
 
 .values h3 {
-  color: #004aad;
+  color: #004080;
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -205,10 +178,12 @@ body {
 }
 
 .values strong {
-  color: #004aad;
+  color: #004080;
 }
 
-/* --- Leadership Section --- */
+/* ============================================
+   LEADERSHIP SECTION
+============================================ */
 .leadership {
   padding: 2rem 1rem;
   text-align: center;
@@ -216,7 +191,7 @@ body {
 
 .leadership h3 {
   font-size: 1.6rem;
-  color: #004aad;
+  color: #004080;
   margin-bottom: 1.5rem;
 }
 
@@ -248,7 +223,7 @@ body {
 }
 
 .card h4 {
-  color: #004aad;
+  color: #004080;
   margin-bottom: 0.5rem;
 }
 
@@ -257,17 +232,19 @@ body {
   color: #333;
 }
 
-/* =======================
+/* ============================================
    FOOTER
-======================= */
+============================================ */
 footer {
   background: #004080;
   color: #fff;
   padding: 2rem 1rem;
+  display: grid;
+  justify-content: center;
 }
 
 .foot {
-  display: flex;
+  display: grid;
   flex-direction: column;
   align-items: center;
   gap: 2rem;

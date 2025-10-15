@@ -22,6 +22,23 @@ window.addEventListener("resize", () => {
   }
 });
 
+// ------------------ MODAL ------------------
+const cards = document.querySelectorAll(".card");
+
+cards.forEach(card => {
+  const modal = card.querySelector("dialog");
+  const openButton = card.querySelector(".open-button");
+  const closeButton = card.querySelector(".close-button");
+
+  openButton.addEventListener("click", () => {
+    modal.showModal();
+  });
+
+  closeButton.addEventListener("click", () => {
+    modal.close();
+  });
+});
+
 // Main JavaScript for Psalm Global Investment website
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Website loaded successfully!");
