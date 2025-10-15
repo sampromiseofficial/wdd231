@@ -162,7 +162,7 @@ form {
 label {
   font-weight: 600;
   color: #004080;
-  font-size: 0.95rem;
+  font-size: 0.95rem; 
 }
 
 input,
@@ -200,8 +200,10 @@ button {
   transition: background 0.3s ease;
 }
 
-button:hover {
-  
+.form-container button:hover {
+  color: aquamarine;
+  cursor: pointer;
+  font-size: larger;  
 }
 
 /* =======================
