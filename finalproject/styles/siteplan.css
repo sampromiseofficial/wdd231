@@ -1,78 +1,84 @@
 :root {
-    --primary-color: #ff8600;
-    --text-color1: #758bfd; 
-    --text-color2: #f1f2f6; 
-    --background1-color: #aeb8fe;
-    --background2-color: #27187e;
-    --heading-font: "Roboto", sans-serif;
-    --body-font: "Roboto", sans-serif;
-}
-
-body {
-    font-family: var(--body-font);
-    padding: 1rem;
+  --primary-color: #27187e;
+  --text-color1: #758bfd; 
+  --text-color2: #f1f2f6; 
+  --background1-color: #aeb8fe;
+  --background2-color: #ff8600;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Poppins", Arial, sans-serif;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: var(--body-font);
+  color: var(--text-color1);
+  background-color: var(--background1-color);
+  padding: 1rem;
+}
+
+/* ---------- Header ---------- */
 header {
-    background-color: var(--background2-color);
-    color: var(--text-color);
-    padding: 16px;
-    display: grid;
-    grid-template-columns: auto 1fr; /* logo then text */
-    align-items: center; /* vertically center */
-    text-align: right;
-    margin-top: 0.2rem;
-    border-radius: 0.5rem;
+  background-color: var(--background2-color);
+  color: var(--text-color2);
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  text-align: right;
+  margin-top: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 header img {
-    height: 60px;
-    border-radius: 0.2rem;
+  height: 60px;
+  border-radius: 0.2rem;
 }
 
+/* ---------- Headings ---------- */
 h1 {
-    display: grid;
-    text-align: center;
-    font-size: xx-large;
-    font-family: var(--body-font);
-    font-family: var(--text-color2)
+  text-align: center;
+  font-size: xx-large;
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 h2, h3 {
-    color: var(--text-color);
-    font-size: xx-large;
-    font-family: var(--body-font);
+  color: var(--primary-color);
+  font-size: x-large;
+  font-family: var(--heading-font);
 }
 
 h4 {
-    color: var(--text-color);
-    font-size: large;
-    font-family: var(--body-font); 
+  color: var(--text-color1);
+  font-size: large;
+  font-family: var(--body-font);
 }
 
-p {
-    font-family: var(--body-font);
-}
-
+/* ---------- Paragraphs & Lists ---------- */
+p,
 ul li {
-    font-family: var(--body-font);
+  font-family: var(--body-font);
+  color: var(--text-color1);
 }
 
+/* ---------- Wireframes Section ---------- */
 .wireframes {
-    background-color: var(--background1-color);
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+  background-color: var(--background1-color);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .wireframes img {
-    width: 100%;
-    max-width: 20%;
-    height: auto;
-    border: 1px solid var(--background1-color);
-    padding: 0.5rem;
+  width: 100%;
+  max-width: 20%;
+  height: auto;
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
