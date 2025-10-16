@@ -1,6 +1,16 @@
 /* ============================================
    GLOBAL RESET & BASE STYLES (Mobile First)
 ============================================ */
+:root {
+  --primary-color: #27187e;
+  --text-color1: #758bfd; 
+  --text-color2: #f1f2f6; 
+  --background1-color: #aeb8fe;
+  --background2-color: #ff8600;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Poppins", Arial, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +18,10 @@
 }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: var(--body-font);
   line-height: 1.7;
-  color: #333;
-  background-color: #f7f9fc;
+  color: var(--text-color1);
+  background-color: var(--text-color2);
 }
 
 img {
@@ -21,7 +31,7 @@ img {
 }
 
 h1, h2, h3, h4 {
-  color: #004080;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
 }
@@ -37,8 +47,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #004080;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color2);
   padding: 1rem;
   position: relative;
 }
@@ -65,14 +75,14 @@ nav ul {
   display: none;
   flex-direction: column;
   gap: 0.5rem;
-  background: #003366;
+  background: var(--text-color1);
   padding: 0.5rem;
   border-radius: 5px;
   margin-top: 0.5rem;
 }
 
 nav a {
-  color: #fff;
+  color: var(--text-color2);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   display: block;
@@ -80,7 +90,7 @@ nav a {
 
 nav a:hover,
 nav .current a {
-  background: #0059b3;
+  background: var(--background1-color);
 }
 
 /* --- Hamburger Menu --- */
@@ -91,7 +101,7 @@ nav .current a {
   background: none;
   border: none;
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-color2);
   cursor: pointer;
 }
 
@@ -134,7 +144,7 @@ nav .current a {
 
 .lead h2 {
   font-size: 1.6rem;
-  color: #004080;
+  color: var(--primary-color);
   margin-bottom: 1rem;
   display: inline-block;
   padding-bottom: 0.3rem;
@@ -142,7 +152,7 @@ nav .current a {
 
 .lead p {
   font-size: 1rem;
-  color: #333;
+  color: var(--text-color1);
   margin-top: 0.8rem;
 }
 
@@ -150,13 +160,13 @@ nav .current a {
    VALUES SECTION
 ============================================ */
 .values {
-  background-color: #f8f9fb;
+  background-color: var(--text-color2);
   padding: 1.8rem 1rem;
   text-align: center;
 }
 
 .values h3 {
-  color: #004080;
+  color: var(--primary-color);
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
@@ -169,16 +179,16 @@ nav .current a {
 }
 
 .values li {
-  background: #ffffff;
+  background: var(--text-color2);
   margin-bottom: 0.8rem;
   padding: 1rem;
-  border-left: 5px solid #ff7b00;
+  border-left: 5px solid var(--background2-color);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
 }
 
 .values strong {
-  color: #004080;
+  color: var(--primary-color);
 }
 
 /* ============================================
@@ -191,7 +201,7 @@ nav .current a {
 
 .leadership h3 {
   font-size: 1.6rem;
-  color: #004080;
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
 
@@ -202,7 +212,7 @@ nav .current a {
 }
 
 .card {
-  background: #fff;
+  background: var(--text-color2);
   border-radius: 12px;
   padding: 1.2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -223,38 +233,58 @@ nav .current a {
 }
 
 .card h4 {
-  color: #004080;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .card p {
   font-size: 0.95rem;
-  color: #333;
+  color: var(--text-color1);
 }
 
 /* ============================================
    FOOTER
 ============================================ */
 footer {
-  background: #004080;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color2);
+  text-align: center;
   padding: 2rem 1rem;
-  display: grid;
+  font-family: var(--body-font);
+}
+
+footer .social {
+  display: flex;
   justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.foot {
-  display: grid;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+footer .social a img {
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.address h3 {
+footer .social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) invert(0.7);
+}
+
+footer .foot {
+  line-height: 1.6;
+}
+
+footer .foot h3 {
+  color: var(--background1-color);
   margin-bottom: 0.5rem;
 }
 
-.social {
-  display: flex;
-  gap: 1rem;
+footer .foot a {
+  color: var(--text-color1);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer .foot a:hover {
+  color: var(--background2-color);
 }

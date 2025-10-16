@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #1e90ff; /*Dodger Blue*/
-    --text-color1: #333333; /*Dark Gray*/
-    --text-color2: #f0f0f0; /* white2*/
-    --background1-color: #ffffff; /*White*/
-    --background2-color: #121212; /*Charcoal*/
+    --primary-color: #ff8600;
+    --text-color1: #758bfd; 
+    --text-color2: #f1f2f6; 
+    --background1-color: #aeb8fe;
+    --background2-color: #27187e;
     --heading-font: "Roboto", sans-serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -39,7 +39,7 @@ h1 {
     text-align: center;
     font-size: xx-large;
     font-family: var(--body-font);
-    color: #333333;
+    font-family: var(--text-color2)
 }
 
 h2, h3 {

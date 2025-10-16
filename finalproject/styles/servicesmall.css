@@ -1,6 +1,16 @@
 /* =======================
    MOBILE VIEW
 ======================= */
+:root {
+  --primary-color: #27187e;
+  --text-color1: #758bfd; 
+  --text-color2: #f1f2f6; 
+  --background1-color: #aeb8fe;
+  --background2-color: #ff8600;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Poppins", Arial, sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +20,8 @@
 body {
   font-family: "Poppins", Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background-color: #f7f9fc;
+  color: var(--text-color1);
+  background-color: var(--text-color2);
 }
 
 img {
@@ -21,14 +31,14 @@ img {
 }
 
 h1, h2, h3, h4 {
-  color: #004080;
+  color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
 .btn {
   display: inline-block;
-  background: #004080;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color2);
   padding: 0.75rem 1.25rem;
   border-radius: 5px;
   text-decoration: none;
@@ -36,18 +46,18 @@ h1, h2, h3, h4 {
 }
 
 .btn:hover {
-  background: #0059b3;
+  background: var(--text-color1);
 }
 
 .btn.ghost {
   background: transparent;
-  border: 2px solid #004080;
-  color: #004080;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 
 .btn.ghost:hover {
-  background: #004080;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color2);
 }
 
 /* ================================
@@ -57,8 +67,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #004080;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color2);
   padding: 1rem;
   position: relative;
 }
@@ -84,14 +94,14 @@ nav ul {
   display: none;
   flex-direction: column;
   gap: 0.5rem;
-  background: #003366;
+  background: var(--text-color1);
   padding: 0.5rem;
   border-radius: 5px;
   margin-top: 0.5rem;
 }
 
 nav a {
-  color: #fff;
+  color: var(--text-color2);
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: block;
@@ -100,7 +110,7 @@ nav a {
 
 nav a:hover,
 nav .current a {
-  background: #0059b3;
+  background: var(--background1-color);
 }
 
 /* HAMBURGER MENU */
@@ -111,7 +121,7 @@ nav .current a {
   background: none;
   border: none;
   font-size: 2rem;
-  color: #fff;
+  color: var(--text-color2);
   cursor: pointer;
 }
 
@@ -127,7 +137,6 @@ nav .current a {
   display: flex;
 }
 
-
 /* =======================
    MAIN CONTENT
 ======================= */
@@ -140,8 +149,8 @@ nav .current a {
 /* ========== Page Layout ========== */
 main {
   font-family: "Poppins", sans-serif;
-  background-color: #f5f7fa;
-  color: #333;
+  background-color: var(--text-color2);
+  color: var(--text-color1);
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
@@ -151,7 +160,7 @@ main {
 main h1 {
   text-align: center;
   font-size: 1.8rem;
-  color: #003366;
+  color: var(--primary-color);
   margin-bottom: 1.5rem;
 }
 
@@ -166,7 +175,7 @@ main h1 {
 
 /* ========== Service Card ========== */
 .service-card {
-  background-color: #ffffff;
+  background-color: var(--text-color2);
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
@@ -189,7 +198,7 @@ main h1 {
 
 /* Text Styling */
 .service-card h2 {
-  color: #003366;
+  color: var(--primary-color);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
@@ -201,7 +210,7 @@ main h1 {
 }
 
 .service-card a {
-  color: #0066cc;
+  color: var(--background2-color);
   font-weight: 600;
   text-decoration: none;
 }
@@ -225,23 +234,45 @@ main h1 {
    FOOTER
 ======================= */
 footer {
-  background: #004080;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color2);
+  text-align: center;
   padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
 }
 
-.foot {
+footer .social {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.address h3 {
+footer .social a img {
+  filter: brightness(0) invert(1); /* makes icons white */
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+footer .social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0) invert(0.7);
+}
+
+footer .foot {
+  line-height: 1.6;
+}
+
+footer .foot h3 {
+  color: var(--background1-color);
   margin-bottom: 0.5rem;
 }
 
-.social {
-  display: flex;
-  gap: 1rem;
+footer .foot a {
+  color: var(--text-color1);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+footer .foot a:hover {
+  color: var(--background2-color);
 }
