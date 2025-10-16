@@ -3,7 +3,7 @@ export const businessGroups = [
         "id": "business1",
         "title": "Psalmtech ",
         "address": "123 City Rd",
-        "image": "images/psalmtech1.webp",
+        "image": "images/psalmtech.webp",
         "learn_more": "https://www.psalmtech.com",
         "description": "A leading tech company specializing in innovative solutions."
 
