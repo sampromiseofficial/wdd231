@@ -113,7 +113,7 @@ nav .current a {
 .hamburger {
   position: absolute;
   top: 0.08rem;
-  right: 1rem;
+  right: 0.1rem;
   background: none;
   border: none;
   font-size: 2rem;
