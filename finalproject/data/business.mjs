@@ -23,7 +23,7 @@ export const businessGroups = [
         "title": "Wakanow",
         "address": "10 Heritage Ln",
         "image": "images/wakanow.webp",
-        "learn_more": "https://www.townmuseum.com",
+        "learn_more": "https://affiliates.wakanow.com/dashboard/build-your-website",
         "description": "Exhibits about the area's history and notable figures."
     },
     
@@ -32,7 +32,7 @@ export const businessGroups = [
         "title": "TravelStart",
         "address": "Gallery Row",
         "image": "images/travelstart.webp",
-        "learn_more": "https://www.artwalk.com",
+        "learn_more": "https://www.travelstart.com.ng/?affId=222484&utm_source=affiliate&utm_medium=222484",
         "description": "A collection of galleries and street murals celebrating local artists."
     },
     
@@ -41,7 +41,7 @@ export const businessGroups = [
         "title": "Exness trade",
         "address": "88 Discovery Dr",
         "image": "images/exness.webp",
-        "learn_more": "https://www.sciencecentre.com",
+        "learn_more": "https://one.exnesstrack.org/a/c_8sag0lfh2u",
         "description": "Hands-on exhibits for families and school groups."
     },
 
