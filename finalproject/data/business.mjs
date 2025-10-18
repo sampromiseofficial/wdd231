@@ -4,7 +4,7 @@ export const businessGroups = [
         "title": "Psalmtech ",
         "address": "123 City Rd",
         "image": "images/psalmtech.webp",
-        "learn_more": "https://www.psalmtech.com",
+        "learn_more": "https://wa.me/2347085952071",
         "description": "A leading tech company specializing in innovative solutions."
 
     },
@@ -14,7 +14,7 @@ export const businessGroups = [
         "title": "Psalm Auto",
         "address": "45 Old Town Sq",
         "image": "images/toyota.webp",
-        "learn_more": "https://www.historicmarket.com",
+        "learn_more": "https://wa.me/2347085952071",
         "description": "Local market with fresh produce, crafts, and weekend events."
     },
     
@@ -23,7 +23,7 @@ export const businessGroups = [
         "title": "Wakanow",
         "address": "10 Heritage Ln",
         "image": "images/wakanow.webp",
-        "learn_more": "https://affiliates.wakanow.com/dashboard/build-your-website",
+        "learn_more": "https://wa.me/2347085952071",
         "description": "Exhibits about the area's history and notable figures."
     },
     
