@@ -244,14 +244,6 @@ nav .current a {
 
 /* ========== Newsletter Thank You Section ========== */
 /* Success Message Section */
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 60vh;
-  padding: 2rem;
-  background-color: var(--text-color2);
-}
 
 .thank-result {
   background-color: var(--text-color2);
