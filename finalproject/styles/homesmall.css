@@ -236,6 +236,7 @@ nav .current a {
   color: var(--text-color2);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .newsletter-form button:hover {
