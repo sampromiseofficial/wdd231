@@ -239,7 +239,53 @@ nav .current a {
 }
 
 .newsletter-form button:hover {
-  background: #e06b00; /* slightly darker orange */
+  background: var(--background2-color); /* slightly darker orange */
+}
+
+/* ========== Newsletter Thank You Section ========== */
+/* Success Message Section */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2rem;
+  background-color: var(--text-color2);
+}
+
+.thank-result {
+  background-color: var(--text-color2);
+  border: 1px solid var(--text-color2);
+  box-shadow: 0 4px 10px var(--primary-color) (0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 2rem 3rem;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thank-result:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--primary-color) (0, 0, 0, 0.15);
+}
+
+.thank-result h4 {
+  color: var(--text-color1); /* success green */
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#results {
+  color: var(--primary-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: var(--text-color2);
+  border: 1px solid var(--text-color2);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 /* ========================================

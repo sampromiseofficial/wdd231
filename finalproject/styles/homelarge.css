@@ -45,7 +45,16 @@
     max-width: 700px;
   }
 
+  /* ========== Newsletter Thank You Section ========== */
   
+  .thank-result {
+    padding: 1.5rem;
+  }
+  
+  .thank-result h4 {
+    font-size: 1.25rem;
+  }
+
    footer {
   background-color: #27187E; /* deep indigo */
   color: #F1F2F6; /* light gray/white text */

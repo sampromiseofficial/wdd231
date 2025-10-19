@@ -23,22 +23,21 @@ window.addEventListener("resize", () => {
   }
 });
 
-//........Response...........
-const getString = window.location.search;
-const myInfo = new URLSearchParams(getString);
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    const email = params.get("email");
 
-// Display results
-document.querySelector("#results").innerHTML = `
-<p>Thank you, <strong>${myInfo.get("subscriber-name")}</strong></p>
-<p>Email: <strong>${myInfo.get("subscriber-email")}</strong></p>
-`;
+    if (name && email) {
+      document.querySelector("#results").innerHTML = `
+        <p>Thank you, <strong>${name}</strong></p>
+        <p>Email: <strong>${email}</strong></p>
+      `;
 
-// Save in local storage
-localStorage.setItem("feedback", JSON.stringify({
-    firstName: myInfo.get("subscriber-name"),
-    lastName: myInfo.get("subscriber-email"),
-  }));
+      // Save to local storage
+      localStorage.setItem("feedback", JSON.stringify({ name, email }));
 
-// Retrieve from local storage
-const stored = JSON.parse(localStorage.getItem("feedback"));
-console.log(stored);
+      // Retrieve for testing
+      console.log(JSON.parse(localStorage.getItem("feedback")));
+    }
+  });
